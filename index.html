@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Test</title>
+        <meta name="description" content="Bootstrap Test">
+        <link rel="icon" href="images/favicon.png" type="image/png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <div class="container">
+                <h1><a class="navbar-brand" href="#"><img src="images/logo.png" alt="BootstrapTest Logo"></a></h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pulldown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="pulldown">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">AboutUs</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#head01">見出し01</a></li>
+                                <li><a class="dropdown-item" href="#head02">見出し02</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#head03">見出し03</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-none d-sm-block"><img src="images/main1.jpg" class="d-block w-100 h-100" alt="main1"></div>
+                    <div class="d-sm-none"><img src="images/main-s1.jpg" class="d-block w-100 h-100" alt="main1"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-none d-sm-block"><img src="images/main2.jpg" class="d-block w-100 h-100" alt="main2"></div>
+                    <div class="d-sm-none"><img src="images/main-s2.jpg" class="d-block w-100 h-100" alt="main2"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-none d-sm-block"><img src="images/main3.jpg" class="d-block w-100 h-100" alt="main3"></div>
+                    <div class="d-sm-none"><img src="images/main-s3.jpg" class="d-block w-100 h-100" alt="main3"></div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <section class="container topics">
+            <ul class="row">
+                <li class="col-lg-4 col-xs-12 mb-5" id="head01">
+                    <img src="images/img1.jpg" alt="" class="img-thumbnail rounded-circle d-block mx-auto">
+                    <h2>見出し01</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis molestiae doloremque placeat, provident ad quidem. Voluptatibus ratione ipsam sit ex obcaecati hic ab modi omnis eius! Repudiandae reprehenderit, adipisci consectetur eum veritatis ratione maiores quod, in cumque voluptates nesciunt debitis sequi quaerat culpa repellat impedit at ipsa dolores cupiditate necessitatibus?</p>
+                    <a href="" class="btn btn-primary me-2">詳細</a><a href="" class="btn btn-warning">公式</a>
+                </li>
+                <li class="col-lg-4 col-xs-12 mb-5" id="head02">
+                    <img src="images/img2.jpg" alt="" class="img-thumbnail rounded-circle d-block mx-auto">
+                    <h2>見出し02</h2>
+                    <p>Earum aspernatur, magnam ab repellendus voluptates voluptatem minus similique recusandae quisquam consequatur animi. Odit, non minima. Magni, natus ab temporibus ipsa molestias doloribus laudantium, deleniti consequuntur sit, quod ullam cupiditate modi odio. Aperiam architecto modi quasi omnis, atque quod dignissimos distinctio corporis cupiditate aut facilis, quos sint suscipit consectetur cumque.</p>
+                    <a href="" class="btn btn-primary me-2">詳細</a><a href="" class="btn btn-warning">公式</a>
+                </li>
+                <li class="col-lg-4 col-xs-12 mb-5" id="head03">
+                    <img src="images/img3.jpg" alt="" class="img-thumbnail rounded-circle d-block mx-auto">
+                    <h2>見出し03</h2>
+                    <p>Doloremque ex maxime dolores eum, sed corrupti necessitatibus dolorem pariatur at perferendis natus distinctio adipisci quidem aperiam exercitationem suscipit beatae veritatis ab voluptate? Voluptatem atque ut beatae quas aliquid animi, quis non nam mollitia, consectetur provident, fuga adipisci odio facere veniam itaque assumenda distinctio. Consectetur, est suscipit. Dolor, esse possimus!</p>
+                    <a href="" class="btn btn-primary me-2">詳細</a><a href="" class="btn btn-warning">公式</a>
+                </li>
+            </ul>
+        </section>
+        <section class="container banner">
+            <ul class="row">
+                <li class="col-lg-3 col-xs-12"><img src="images/img4.jpg" alt="" class="img-thumbnail rounded w-100 mb-4"></li>
+                <li class="col-lg-3 col-xs-12"><img src="images/img5.jpg" alt="" class="img-thumbnail rounded w-100 mb-4"></li>
+                <li class="col-lg-3 col-xs-12"><img src="images/img6.jpg" alt="" class="img-thumbnail rounded w-100 mb-4"></li>
+                <li class="col-lg-3 col-xs-12"><img src="images/img7.jpg" alt="" class="img-thumbnail rounded w-100 mb-4"></li>
+            </ul>
+        </section>
+        <section class="container cards my-5">
+            <div class="row">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/img8.jpg" alt="card" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/img9.jpg" alt="card" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="images/img10.jpg" alt="card" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-dark text-white-50 py-5">
+            <div class="container">
+                <p class="float-end mb-1"><a href="#">Back to top</a></p>
+                <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+                <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/5.3/getting-started/introduction/">getting started guide</a>.</p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+</html>
+
